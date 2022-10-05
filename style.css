@@ -33,7 +33,7 @@ table {
 
 }
 
-input[type="button"] {
+.btn{
     width: 98%;
     height: 90%;
     padding: 15px 40px;
@@ -46,7 +46,7 @@ input[type="button"] {
     border-radius: 5%;
     box-shadow: 0 2px #999;
 }
-input[type="button"]:active {
+.btn:active {
     background-color: rgb(124, 139, 207);
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -62,4 +62,36 @@ input[type="text"] {
     border-radius: 5px;
     border: 2px solid black;
 }
+.darkMode{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.lightMode{
+    background-color: white;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
 
+}
+/* #result{
+    background-color: rgb(133, 129, 129);
+} */
+
+/* --for Dark mode */
+.dark{
+    background-color: #666;
+    
+}
+.darkHead{
+    color: black;
+
+}
+.darkCalc{
+    background-color: black;
+    /* color: black; */
+
+}

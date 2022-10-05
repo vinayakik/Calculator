@@ -17,6 +17,7 @@
 
 		var cal = document.getElementById("calcu");
 		cal.onkeyup = function (event) {
+			console.log(event);
 			if (event.keyCode === 13) {
 				console.log("Enter");
 				let x = document.getElementById("result").value
@@ -36,3 +37,35 @@
 		function clr() {
 			document.getElementById("result").value = ""
 		}
+
+// Dark mode function on button click
+
+function myDark(){
+	document.body.classList.toggle("dark");
+	document.querySelector("h1").classList.toggle("darkHead")
+	document.querySelector("#result").classList.toggle("dark");
+
+	for (var i of document.querySelectorAll(".btn")){
+		i.classList.toggle("darkCalc");
+		// console.log(i.classList);
+	}
+	document.querySelector("#darkLight").classList.toggle("lightMode");
+
+}
+
+//To change the text in the Dark mode/Light mode button
+
+document.querySelector("#darkLight").addEventListener("click",toggleText);
+
+
+function toggleText(){
+
+	var currentText = document.querySelector("#darkLight");
+	console.log(currentText.innerHTML);
+	if (currentText.innerText ==="Switch to Dark mode"){
+		currentText.innerText="Switch to Light mode";
+	}
+else{
+		currentText.innerText="Switch to Dark mode";
+	}
+}
